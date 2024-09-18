@@ -185,8 +185,16 @@ p {
     .intro{
         font-size: 1em;
     }
+    .vector{
+        width: 50%;
+        margin-top: 0px;
+        margin-left: 40%;
+    }
+    h1 {
+        font-size: 1.7em;
+    }
     .sold-out {
-        margin-left: 70px;
+        margin-left: 110px;
     }
     .button-container{
         display: flex;
@@ -198,5 +206,8 @@ p {
     }
     br{
         display: none;
+    }
+    .name-price{
+        font-size: 0.9em;
     }
 }
