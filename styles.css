@@ -4,14 +4,13 @@
     box-sizing: border-box;
 }
 body {
-    background-color: #111315;
+    background-color: #251c12;
     height: 170vh;
 }
 .bg-cafe{
     width: 100%;
 }
 .listings{
-    background-color: #1B1D1F;
     padding: 0px;
     border-radius: 15px;
     width: 85%;
@@ -20,6 +19,8 @@ body {
     position: absolute;
     padding-bottom: 100px;
     transition: 0.2s all;
+    backdrop-filter: blur(5px);
+    background-color: rgba(29, 21, 12, 0.5);
 }
 .vector{
     margin-left: 50%;
@@ -28,13 +29,13 @@ body {
 }
 h1 {
     text-align: center;
-    color: #FEF7EE;
+    color: #fcf1e3;
     margin-bottom: 10px;
     margin-top: -110px;
 }
 .intro{
     text-align: center;
-    color: #6F757C;
+    color: #f1dfc7;
     font-size: 1.1em;
     font-weight: 500;
     line-height: 1.5;
@@ -45,6 +46,7 @@ ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    row-gap: 50px;
 }
 
 li {
@@ -54,7 +56,7 @@ li {
 }
 h2 {
     font-size: 1.3em;
-    color: #FEF7EE;
+    color: #f1dfc7;
     margin: 10px 0;
     font-weight: 500;
 }
@@ -72,8 +74,8 @@ h2 {
     position: absolute;
     top: 10px;
     left: 10px;
-    background-color: #F6C768;
-    color: #111315;
+    background-color: #28a028;
+    color: #fff;
     padding: 5px;
     border-radius: 50px;
     font-size: 0.8em;
@@ -99,12 +101,12 @@ p {
     font-size: 1em;
 }
 .price-box{
-    background-color: #BEE3CC;
+    background-color: #98e498;
     border-radius: 8px;
-    padding: 0 10px;
+    padding: 0 5px;
 }
 .sold-out {
-    color: #ED735D;
+    color: #ff9428;
     font-weight: 500;
     margin-top: 5px;
     margin-left: 200px;
@@ -116,11 +118,11 @@ p {
     font-weight: 600;
 }
 .no-ratings{
-    color: #6F757C;
+    color: #8f6031;
     font-weight: 600;
 }
 .votes{
-    color: #6F757C;
+    color: #8f6031;
     margin-left: 5px;
     font-weight: 600;
 }
@@ -149,13 +151,14 @@ p {
 }
 
 .filter-button.active {
-    background-color: #6F757C;
+    background-color: #3f2f1f;
     color: #FEF7EE;
 }
 
 .filter-button:hover {
-    background-color: #6F757C;
+    background-color: #3f2f1f;
 }
+
 
 
 @media only screen and (max-width: 1280px){
@@ -166,6 +169,9 @@ p {
 }
 
 @media only screen and (max-width: 1024px){
+    body{
+        height: 270vh;
+    }
     .listings{
         margin-left: 50px;
         margin-top: -100px;
@@ -174,16 +180,20 @@ p {
     .intro{
         font-size: 1em;
     }
+    ul{
+        row-gap: 20px;
+    }
 }
 
 @media only screen and (max-width: 560px){
     .listings{
         margin-left: 30px;
         margin-top: -50px;
-        padding: 30px;
+        padding: 0px;
     }
     .intro{
         font-size: 1em;
+        margin: 0 10px;
     }
     .vector{
         width: 50%;
@@ -194,7 +204,7 @@ p {
         font-size: 1.7em;
     }
     .sold-out {
-        margin-left: 110px;
+        margin-left: 178px;
     }
     .button-container{
         display: flex;
@@ -209,5 +219,12 @@ p {
     }
     .name-price{
         font-size: 0.9em;
+    }
+    .price-box{
+        border-radius: 6px;
+        padding: 0 3px;
+    }
+    ul{
+        row-gap: 0px;
     }
 }
